@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打开月亮的灯</title>
+	<link rel="stylesheet" href="css/moon.css" />
+	<link rel="stylesheet" href="css/biaoqian.css" />
+	<link rel="stylesheet" href="css/bianlitie.css" />
+    <style>
+body {
+	/* 宽度占浏览器可视区域的宽度 */
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #f2f2f2;
+}
+
+.navbar {
+	/* 相对定位 */
+	position: absolute;
+	width: 100%;
+	height: 50px;
+    top: -100px;
+	line-height: 50px;
+	background-color: #fff;
+	/* 盒子阴影 */
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.navbar input {
+	/* 隐藏元素 */
+	display: none;
+}
+.navbar label {
+	/* 绝对定位 */
+	position: absolute;
+	top: 0;
+	left: 200px;
+	font-size: 20px;
+	color: #666;
+	padding-left: 20px;
+	cursor: pointer;
+	/* 加过渡 */
+	transition: all 0.5s;
+}
+.navbar ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	/* 高度占浏览器可视区域的高度 */
+	height: 740px;
+    background-image: url("./img/004.jpg");
+	transition: all 0.5s;
+}
+.navbar ul li {
+	width: 100%;
+	height: 100px;
+	margin-bottom: 10px;
+}
+.navbar ul li:first-child {
+	/* 弹性布局 让图片和文字垂直+水平居中于盒子内 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 改变了盒子的主轴方向 让两个元素垂直排列 */
+	flex-direction: column;
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+}
+.navbar ul li:first-child img {
+	width: 80px;
+	border-radius: 50%;
+}
+.navbar ul li:first-child span {
+	color: #fff;
+	font-size: 20px;
+    margin-left: -50px;
+	/* 禁止文字换行 */
+	white-space: nowrap;
+}
+.navbar ul li a {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	color: #d2d2d2;
+	/* 取消a标签的下划线 */
+	text-decoration: none;
+	/* 现在盒子内直接定义好左边框 不过颜色为透明色也就看不见 */
+	border-left: 6px solid transparent;
+}
+.navbar ul li a i {
+	font-size: 20px;
+	margin: 0 15px;
+}
+.navbar ul li a span {
+	font-size: 18px;
+}
+.navbar ul li a:hover {
+	color: #fff;
+	/* 这样文字和图标会被带跑不太好看 解决办法很简单 */
+	/* 然后鼠标放上去变颜色就可以了 */
+	border-left-color: #fb7299;
+}
+		@font-face {
+			font-family: zhanku;
+			src: url("font/站酷快乐体.ttf");
+		}
+		@font-face {
+			font-family: weizhi;
+			src: url("font/站酷文艺体.ttf");
+		}
+
+</style>
+</head>
+<body>
+<div class="home">
+    <div class="content">
+            <div class="stars"></div>
+            <img src="./img/001.jpg" alt="" style="width: 100%">
+            <h3 class="title" style="font-family: zhanku">打开月亮的灯</h3>
+            <h3 class="titles" style="font-family: weizhi">今天也要元气满满呀</h3>
+            <img class="icon" src="./img/down.png" alt="">
+            <div class='ribbon'>
+                <a href='' style="font-family: weizhi"><span>首页</span></a>
+                <a href='' style="font-family: weizhi"><span>关于我们</span></a>
+                <a href='LogIn.html' style="font-family: weizhi"><span>登录留言</span></a>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="home">
+    <div class="content">
+            <div class="stars"></div>
+            <img class="bgc"  src="./img/leaves.png" alt="">
+        <div class="navbar">
+            <input type="checkbox" id="checkbox" />
+            <ul>
+				<li>
+					<span style="font-family: weizhi">主功能区</span>
+				</li>
+				<li>
+					<a href="Quest.html">
+						<i class="fa fa-home" style="margin-left: 20px"></i>
+						<span style="font-family: weizhi;font-size: 22px">"HELLO"<br>
+							<span style="font-family: weizhi;font-size: 14px;margin-left: 4px;">抑郁自评量表(sds)</span></span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<i class="fa fa-home" style="margin-left: -3px"></i>
+						<span style="font-family: weizhi;font-size: 22px">"丛星"<br>
+							<span style="font-family: weizhi;font-size: 14px;margin-left: 4px; ">抑郁症的主要类别(eight)</span></span>
+					</a>
+				</li>
+				<li>
+					<a href="Massage.html">
+						<i class="fa fa-home" style="margin-left: 1px"></i>
+						<span style="font-family: weizhi;font-size: 22px">"星鸣"<br>
+						<span style="font-family: weizhi;font-size: 14px;margin-left: 4px; ">故事或案例分享(story)</span></span></span>
+					</a>
+				</li>
+				<li>
+					<a href="Massage.html">
+						<i class="fa fa-home" style="margin-left: 1px"></i>
+						<span style="font-family: weizhi;font-size: 22px">"捡宝藏"<br>
+						<span style="font-family: weizhi;font-size: 14px;margin-left: 4px; ">郁友来信互访(friend)</span></span></span>
+					</a>
+				</li>
+			</ul>
+     </div>
+</div>
+
+
+	<div class="pince" style="margin-left: 10rem;margin-top:-35rem">
+		<div class="main">
+			<div class="note" style="margin-left: 501px;background-color: #03a9f4">
+			<div class="closeBtn">就算全世界与你格格不入,总有一个会对你温柔以待。</div>
+		</div>
+
+		<div class="main">
+			<div class="note" style="margin-left: 251px;margin-top: 150px;background-color: #6e9c72">
+			<div class="closeBtn" style="">别否定自己，你特别好，特别温柔，特别值得。
+		</div>
+
+		</div>
+		<div class="main">
+			<div class="note" style="margin-left: 614px;margin-top: 140px;background-color: palegoldenrod">
+			<div class="closeBtn" style="">不要去听别人的忽悠，你人生的每一步都必须靠自己的能力完成。
+				自己肚子里没有料，手上没本事，认识再多人也没用。</div>
+		</div>
+		<div class="main">
+			<div class="note" style="margin-left: 380px;margin-top: 100px;background-color: yellow">
+			<div class="closeBtn" style="">就算全世界与你格格不入,总有一个会对你温柔以待。</div>
+		</div>
+		<div class="main">
+			<div class="note" style="margin-left: 380px;margin-top: 100px;background-color: greenyellow">
+			<div class="closeBtn" style="">“生命周而复始又乏味之至，而只有当你觉得它可爱时，它才会变得可爱如斯。”</div>
+		</div>
+
+		<div class="main">
+			<div class="note" style="margin-left: 150px;margin-top: -15px;background-color: yellow">
+			<div class="closeBtn" style="">就算全世界与你格格不入,总有一个会对你温柔以待。</div>
+		</div>
+
+
+		<div class="main">
+			<div class="note" style="margin-left: 150px;margin-top: -15px;background-color: yellow">
+			<div class="closeBtn" style="">外界的声音都是参考 ，你不开心就不要参考。</div>
+		</div>
+
+		<div class="main">
+			<div class="note" style="margin-left: 501px;margin-top: 220px;background-color: orange">
+			<div class="closeBtn" style="">“如果你瞄准月亮，即使迷失，也是落在璀璨星辰之间。”</div>
+		</div>
+		<div class="main">
+			<div class="note" style="margin-left: 730px;margin-top: 70px;background-color: darkred">
+			<div class="closeBtn" style="">“你不必生来勇敢，天赋过人。只要能投入勤奋，诚诚恳恳。”</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<div class="container"  id="tiaozhuan"   style="margin-top:20rem;margin-left: 20rem">
+			<div class="planet"></div>
+		</div>
+
+
+<input type="text" id="info" placeholder="请在此输入内容进行留言" />
+
+<script type="text/javascript">
+
+
+	window.onload = function(){
+    var obj = document.getElementById('tiaozhuan');
+    obj.onclick=function(){
+        window.location.href="Main.html";
+     }
+ 	}
+
+			//找父元素，因为要删除子元素
+			var mainDiv = document.querySelector(".main");
+			// 思路：1>根据ID找到文本输入框
+			var inputTag = document.querySelector("#info");
+			//  2>为input框绑定键盘事件，按回车键触发一个功能的执行
+			inputTag.onkeydown = function(event) {
+				// 13对应的是回车键
+				if (event.keyCode == 13) {
+					//获取用户输入的内容
+					var inputContent = inputTag.value;
+					if (inputContent == "") {
+						alert("不能为空!");
+						return;
+					}
+					//new RegExp('^[ ]+$').test(inputContent)
+					//
+					if (/^[ ]+$/.test(inputContent)) {
+						alert("不能空格!");
+						return;
+					}
+					//调用动态创建便利贴的方法
+					createDiv(inputContent);
+					//                     //要把输入框中的内容清除
+					inputTag.value = "";
+				}
+			}
+			//3> 定义一个函数 createDiv(msg) 动态的创建div，参数是输入框中的值
+			// 定义一个函数
+			function createDiv(msg) {
+				var noteDiv = document.createElement("div"); // <div> </div>
+				noteDiv.className = "note"; //<div class="note"></div>
+				noteDiv.innerHTML = msg; //内容插入div的内部  <div class="note">内容</div>
+				noteDiv.style.backgroundColor = randomColor();
+
+				var h = window.innerHeight - 250; //窗体的高度-从输入框开始的高度
+				var w = window.innerWidth -300;
+				noteDiv.style.left = Math.random() * w + "px";
+				noteDiv.style.top = Math.random() * h + "px";
+
+
+				var closeBtnDiv = document.createElement("div"); //<div></div>
+				closeBtnDiv.className = "closeBtn"; //<div class="closeBtn"></div>
+				//把closeBtnDiv追加到noteDiv中
+				noteDiv.appendChild(closeBtnDiv); // <div class="note">内容<div class="closeBtn"></div></div>
+				mainDiv.appendChild(noteDiv);
+				//为closeBtnDiv设置单击事件
+				closeBtnDiv.onclick = function(event) {
+					event.stopPropagation();
+					//单击关闭移除掉note（留言纸）元素
+					mainDiv.removeChild(noteDiv);
+				}
+
+				// 点击时,会出现在最上层
+				noteDiv.onclick = function() {
+					var allNote = this.parentNode.children;
+					for (var i = 0; i < allNote.length; i++) {
+						allNote[i].style.zIndex = allNote[i].style.zIndex--;
+					}
+					this.style.zIndex = 999;
+				}
+
+			}
+			//随机背景色
+			function randomColor() {
+				var red = Math.round(Math.random() * 255);
+				var green = Math.round(Math.random() * 255);
+				var blue = Math.round(Math.random() * 255);
+				return "rgb(" + red + "," + green + "," + blue + ")";
+			}
+		</script>
+</body>
+</html>

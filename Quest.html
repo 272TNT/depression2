@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/moon.css" />
+    <style>
+        body{
+            z-index:-1;
+            background-image: url("img/bacimg2.jpg");
+            background-size: cover;
+            background-position: center center;
+}
+.bg_blue{
+}
+.form{
+width:470px;
+margin:100px auto;
+line-height:50px;
+background:#fff;
+padding:6%;
+border-radius: 10px;
+}
+.m-l-0{
+    margin-left:150px;
+    font-size: 22px;
+}
+.m-l-1{
+    margin-left:32px;
+    font-size: 18px;
+}
+.m-l-2{
+    margin-left:32px;
+    font-size: 13px;
+}
+.home_href {
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    background: gray;
+    margin-left: 150px;
+}
+    </style>
+</head>
+
+<body>
+<div class="bg_blue">
+<div class="form">
+<div class="m-l-0">抑郁自评量表（SDS）</div>
+<div class="m-l-1">下面有20条题目，测试题分为4级评分的自评量表：</div>
+<div class="m-l-2"><input type="radio" name="sex" value="nan">A：没有或很少时间（过去一周内,出现这类情况的日子不超过一天）</div>
+<div class="m-l-2"><input type="radio" name="sex" value="nan">B：小部分时间（过去一周内，有1-2天有过这类情况）</div>
+<div class="m-l-2"><input type="radio" name="sex" value="nan">C：相当多时间（过去一周内，3-4天有过这类情况）</div>
+<div class="m-l-2"><input type="radio" name="sex" value="nan">D：绝大部分或全部时间（过去一周内，有5-7天有过这类情况）</div>
+<div class="m-l-1">抑郁症SDS测试题开始测试：</div>
+    <div class="m-l-2"><input type="checkbox"   value="1" > 1、 我觉得闷闷不乐，情绪低沉&nbsp;<br>
+                       <input type="checkbox"   value="2" >2、 我觉得一天之中早晨最好<br>
+                       <input type="checkbox"   value="3" >3、 我一阵阵地哭出来或是想哭<br>
+                       <input type="checkbox"   value="4" >4、 我晚上睡眠不好<br>
+                       <input type="checkbox"   value="5" >5、 我吃的和平时一样多<br>
+                       <input type="checkbox"   value="6" >6、 我与异性接触时和以往一样感到愉快<br>
+                       <input type="checkbox"   value="2" >7、 我发觉我的体重在下降<br>
+                       <input type="checkbox"   value="2" >8、 我有便秘的苦恼<br>
+                       <input type="checkbox"   value="2" >9、 我心跳比平时快<br>
+                       <input type="checkbox"   value="2" >10、我无缘无故感到疲乏<br>
+                       <input type="checkbox"   value="2" >11、我的头脑和平时一样清楚<br>
+                       <input type="checkbox"   value="2" >12、我觉得经常做的事情并没有困难<br>
+                       <input type="checkbox"   value="2" >13、我觉得不安而平静不下来<br>
+                       <input type="checkbox"   value="2" >14、我对将来抱有希望<br>
+                       <input type="checkbox"   value="2" >15、我比平常容易激动<br>
+                       <input type="checkbox"   value="2" >16、我觉得做出决定是容易的<br>
+                       <input type="checkbox"   value="2" >17、我觉得自己是个有用的人，有人需要我<br>
+                       <input type="checkbox"   value="2" >18、我的生活过得很有意思<br>
+                       <input type="checkbox"   value="2" >19、我认为如果我死了别人会生活的更好些<br>
+                       <input type="checkbox"   value="2" >20、平常感兴趣的事我仍然照样感兴趣<br>
+        <button class="home_href"><a href="Main.html" style="text-decoration : none;color: black">提交</a></button>
+
+
+</div>
+</div>
+
+
+
+</body>
+<script>
+
+window.onload = function(){
+    var obj = document.getElementById('tiaozhuan');
+    obj.onclick=function(){
+        window.location.href="Login.html";
+     }
+ }
+
+</script>
+</html>

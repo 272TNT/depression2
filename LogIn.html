@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>打开月亮的灯</title>
+    <link rel="stylesheet" href="css/moon.css" />
+    <style>
+
+        * {
+    margin: 0;
+    padding: 0
+}
+
+.from {
+    overflow: hidden;
+    position: relative;
+}
+
+.bgc {
+    width: 100%;
+}
+
+.submit {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: -120px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 15rem;
+    width: 500px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.form_input {
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 20px;
+}
+
+.inputs {
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    color: #666;
+    padding-left: 20px;
+}
+
+.form_input span {
+    width: 85px;
+    align-self: center;
+}
+
+.btn_submit {
+    align-self: center;
+}
+
+.btn {
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    background: #999;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    background: #666;
+}
+
+.back {
+    margin-left: 10px;
+}
+
+.home_href {
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    background: #FFD204;
+}
+@font-face {
+			font-family: zhanku;
+			src: url("font/站酷快乐体.ttf");
+		}
+.fuck{
+    text-decoration : none;
+    font-family: zhanku;
+    margin-top: -19rem;
+    margin-left: 25px;
+}
+    </style>
+</head>
+<body>
+<body>
+    <div class="from">
+        <img class="bgc" src="./img/003.jpg" alt="">
+        <div class="submit">
+            <span class="form_title">注册</span>
+            <div class="form_input">
+                <span>姓名：</span>
+                <input class="inputs" type="text" value="xxx">
+            </div>
+            <div class="form_input">
+                <span>邮箱：</span>
+                <input class="inputs" type="text" value="....@qq.com">
+            </div>
+            <div class="form_input">
+                <span>电话：</span>
+                <input class="inputs" type="text" value="191****824">
+            </div>
+            <div class="btn_submit">
+                <a href="Massage.html">
+                    <button class="home_href">提交</button></a>
+                <a href="Main.html" class="back"><button class="btn">首页</button></a>
+            </div>
+        </div>
+    </div>
+<div class="container" style="margin-top: 15rem;margin-left: 30rem">
+			<div class="planet" id="tiaozhuan"></div>
+		</div>
+</body>
+</body>
+<script>
+
+window.onload = function(){
+    var obj = document.getElementById('tiaozhuan');
+    obj.onclick=function(){
+        window.location.href="Main.html";
+     }
+ }
+
+</script>
+</html>
